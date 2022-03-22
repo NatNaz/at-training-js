@@ -3,21 +3,17 @@ function definePrime (number) {
     value: number,
     prime: true
     };
-    let dividers = [];
+    check:
     for (let i = 2; i <= Math.floor(Math.sqrt(number)); i++) {
-        dividers.push(i);
-    } 
-        check:
-    for (let a = 0; a <= dividers.length; a++) {
-        let rest = number % dividers[a];
+               let rest = number % i;
         if (rest !== 0) {
             continue check;
         } else {
             numberToCheck.prime = false;
-          console.log('The number is composite');
+          console.log('The number is composite! ' + number + ' divides by ' + i + '.');
         }
     }
     if (numberToCheck.prime != false) {
-        console.log( 'The number is prime');
+        console.log( 'The number is prime!');
     }  
 }
