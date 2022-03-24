@@ -28,6 +28,7 @@ function playHangman() {
              const hidenWord = '-'.repeat(answer.length).split('');
              const numberOfMistakes = 7;
              const mistakes = [];
+             const wrongGuesses = [];
              const AsciiHangman = [
                 '____ \n',
                 '|/ | \n',
@@ -51,6 +52,7 @@ function playHangman() {
         }
             if (!hidenWord.includes(guess)) {
                  mistakes.push(AsciiHangman.shift());
+                 wrongGuesses.push(guess);
                  if (numberOfMistakes === mistakes.length) {
                     alert ('GAME OVER! \n ____\n|/ |\n| @\n| /|\\\n| / \\\n|\n===== \n Ответ: ' + word + '\n Повезёт в другой раз!');
                     return ('game over');
@@ -60,7 +62,7 @@ function playHangman() {
                 alert ('Поздравляю! Победа!');
                 return ('Победа! Ответ: ' + hidenWord.join(''));
             }
-        letterToCheck = prompt ('Угадай следующую букву! \n ' + hidenWord.join(' ') + '\n' + mistakes.join(''), '');  
+        letterToCheck = prompt ('Угадай следующую букву! \n ' + hidenWord.join(' ') + '\n' + mistakes.join('') + '\n Допущенные ошибки: ' + wrongGuesses.join (', '), '');  
     }        
     } else { 
         alert ('Ну нет, так нет... \n Давай, до свидания!');
