@@ -7,5 +7,4 @@ for (let i = fromNumber; i < toNumber ; i++) {
     console.log (i);
 }
 }
-
 logPrimeNumbersFromTo (4,27);
