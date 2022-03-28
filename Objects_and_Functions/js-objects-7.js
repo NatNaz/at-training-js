@@ -1,4 +1,4 @@
-function definePrime (number) {
+function definePrime(number) {
     let numberToCheck = {
     value: number,
     prime: true
