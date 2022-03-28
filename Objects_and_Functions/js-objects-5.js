@@ -1,7 +1,9 @@
 function defineName (name) {
         if(name) {
-            console.log('Привет ' + name + '!');
+            console.log('Привет, ' + name + '!');
         } else {
 console.log('Нет такого имени.');
         }
-} 
+}
+defineName('Маша');
+defineName();
