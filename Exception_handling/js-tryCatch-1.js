@@ -8,7 +8,7 @@ function exercise() {
         
         if (e.name = 'ReferenceError') {
         alert('let перед использованием нужно объявить');
-        }  else {
+        } else {
             throw e;
         }
     
