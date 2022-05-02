@@ -1,3 +1,4 @@
+// Выполнить умножение различных типов(string * boolean, string * number, number * boolean)
 function multiplication (arg1,arg2) {
     let product = arg1 * arg2;
     console.log (typeof(arg1) + ' * ' + typeof(arg2) + ' = ' + typeof(product) + '\n ' + arg1 + ' * ' + arg2 + ' = ' + product);
