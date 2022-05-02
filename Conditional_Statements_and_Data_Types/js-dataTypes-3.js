@@ -1,3 +1,4 @@
+// Выполнить деление различных типов(string/boolean, string/number, number/Boolean)
 function dividion (arg1,arg2) {
     let result = arg1 / arg2;
     console.log (typeof(arg1) + ' / ' + typeof(arg2) + ' = ' + typeof(result) + '\n ' + arg1 + ' / ' + arg2 + ' = ' + result);
