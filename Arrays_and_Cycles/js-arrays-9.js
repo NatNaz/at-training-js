@@ -1,3 +1,4 @@
+// Реализовать цикл, который выводит в консоль простые числа
 function logPrimeNumbersFromTo(fromNumber, toNumber) {
 prime:
 for (let i = fromNumber; i < toNumber ; i++) {
