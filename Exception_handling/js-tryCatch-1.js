@@ -1,3 +1,6 @@
+/* В try catch конструкцию завернуть код: console.log(a), let a = 3. 
+И вывести ошибку – ‘let перед использованием нужно объявить’. 
+При выполнении 1/0  выводить ошибку 'на ноль делить нельзя' */
 function exercise() {
     try {
         console.log(a);
@@ -7,21 +10,21 @@ function exercise() {
     } catch(e) {
         
         if (e.name = 'ReferenceError') {
-        alert('let перед использованием нужно объявить');
+        console.log('let перед использованием нужно объявить');
         }  else {
             throw e;
         }
     
     }
-    }
-    try {
+}
+try {
     exercise();
     if (Infinity) {
         throw new TypeError ('Infinity');
-        } 
+    } 
     } catch(e) {
          if (e.name == 'TypeError') {
-            alert('На ноль делить нельзя');
+            console.log('На ноль делить нельзя');
         } else {
             throw e;
         }
