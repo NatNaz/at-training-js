@@ -1,3 +1,5 @@
+// Напишите функцию, которая определяет является ли число простым или нет
+
 function definePrime (number) {
     let numberToCheck = {
     value: number,
@@ -17,3 +19,6 @@ function definePrime (number) {
         console.log( 'The number is prime!');
     }  
 }
+definePrime(23);
+definePrime(137);
+definePrime(4);
