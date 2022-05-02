@@ -1,3 +1,4 @@
+// Реализовать цикл, который выводит в консоль нечетные числа
 function logOddNumbersFromTo (fromNumber, toNumber) {
     odd:
     for (let i = fromNumber; i <= toNumber ; i++) {
