@@ -1,1 +1,0 @@
-export let variable1 = 'Hello!';
