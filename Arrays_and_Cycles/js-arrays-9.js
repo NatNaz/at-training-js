@@ -2,9 +2,11 @@
 function logPrimeNumbersFromTo(fromNumber, toNumber) {
   prime: for (let i = fromNumber; i < toNumber; i++) {
     for (let a = 2; a < i; a++) {
-      if (i % a == 0) continue prime;
+      if (i % a === 0) continue prime;
     }
-    console.log(i);
+    if (i > 1) {
+      console.log(i);
+    }
   }
 }
 
