@@ -5,6 +5,8 @@ function exercise() {
   try {
     console.log(a);
     let a = 3;
+    let b = 0;
+    console.log(1 / b);
   } catch (e) {
     if ((e.name = "ReferenceError")) {
       console.log("let перед использованием нужно объявить");
@@ -13,15 +15,8 @@ function exercise() {
     }
   }
 }
-
-let b = 0;
-
-function tryCatch(b) {
-  console.log(1 / b);
-}
-
 try {
-  tryCatch(b);
+  exercise();
   if (b === 0) {
     throw new TypeError("Infinity");
   }
